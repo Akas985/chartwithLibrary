@@ -1,3 +1,6 @@
+
+
+
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { imsCharts } from './charts/ims-chart.component';
 import { MasterService } from './services/masterRepoService';
@@ -8,8 +11,8 @@ import { HttpClient } from '@angular/common/http';
 
 
 @Component({
-  selector: 'lib-imsChartLib',
-  templateUrl: './ims-chart-lib.component.html',
+  selector: 'lib-imsChartTheme',
+  templateUrl: './ims-chart-theme.component.html',
   styleUrls: ['./style.scss'],
   encapsulation: ViewEncapsulation.None,
 })
@@ -18,7 +21,7 @@ import { HttpClient } from '@angular/common/http';
 // }
 
 
-export class ImsChartLibComponent {
+export class ImsChartThemeComponent {
 
   @ViewChild('imschart') chartComp!: imsCharts ;
   newData: any[] = [];
@@ -50,11 +53,7 @@ export class ImsChartLibComponent {
   public chart: any;
   
   constructor( public http: HttpClient, private router: Router, public masterService: MasterService, public declerationService: DeclerationMasterService,) {
-    // this.http.get("./appConfig.json")
-    // .subscribe((data:any)=>{
-    //   localStorage.setItem("ims-chartApiUrl", data.apiUrl)        
-    // });
-   
+
     this.dashboardmaindata();
 
   }
@@ -116,4 +115,5 @@ export class ImsChartLibComponent {
 
 
 }
+
 

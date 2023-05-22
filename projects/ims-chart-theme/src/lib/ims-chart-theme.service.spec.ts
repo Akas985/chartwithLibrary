@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ImsChartLibService } from './ims-chart-lib.service';
+import { ImsChartThemeService } from './ims-chart-theme.service';
 
-describe('ImsChartLibService', () => {
-  let service: ImsChartLibService;
+describe('ImsChartThemeService', () => {
+  let service: ImsChartThemeService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ImsChartLibService);
+    service = TestBed.inject(ImsChartThemeService);
   });
 
   it('should be created', () => {

@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ims-chart-lib",
+  "dest": "../../dist/ims-chart-theme",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

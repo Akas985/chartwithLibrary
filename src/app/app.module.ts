@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DeclerationMasterService, ImsChartLibComponent, ImsChartLibModule, ImsChartLibService, MasterService } from 'dist/ims-chart-lib';
 import { CommonModule } from '@angular/common';
+import { ImsChartThemeModule } from 'imsChartTheme';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,7 @@ import { CommonModule } from '@angular/common';
     CommonModule ,
     BrowserModule,
     AppRoutingModule,
-    ImsChartLibModule,
+    ImsChartThemeModule,
     
 
   ],

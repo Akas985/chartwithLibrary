@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { ImsChartLibComponent, MasterService, imsCharts } from 'dist/ims-chart-lib';
+import { MasterService } from 'imsChartTheme';
+// import { ImsChartLibComponent, MasterService, imsCharts } from 'dist/ims-chart-lib';
 // import { environment } from 'dist/ims-chart-lib/lib/environment';
 
 
@@ -16,7 +17,4 @@ export class AppComponent {
     this.chartService.apiUrl = 'http://localhost:3000'
   }
   title = 'test';
-
-  // @ViewChild('imschartComp') imschartComp!: ImsChartLibComponent;
-  // @ViewChild('imschart') imschart!: imsCharts;
 }
